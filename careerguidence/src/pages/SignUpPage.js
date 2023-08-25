@@ -3,7 +3,8 @@ import Layout from '../Components/Layout'
 const SignUpPage = () => {
   return (
  <Layout>
-  <h1>Sign Up page</h1>
+
+   <h1>SignUpPage</h1>
  </Layout>
   )
 }
