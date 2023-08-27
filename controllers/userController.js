@@ -99,11 +99,16 @@ export const loginController=async(req,res)=>{
            
    }
    catch(error){
-         console.
+         console.log(error)
          res.status(500).send({
             success:"false",
             messgage:"Invalid user please signup",
             error
          })
    }
+}
+
+//test controller
+export const testController=(req,res)=>{
+   res.send("protected routes")
 }
