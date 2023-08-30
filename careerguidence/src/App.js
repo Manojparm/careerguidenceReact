@@ -19,7 +19,7 @@ function App() {
       <Route path="/"  element={<HomePage/>}/>
       <Route path='/aptitudetest' element={<ApptitudeTestPage/>}/>
       <Route path='/careerselection' element={<CareerSelectionPage/>}/>
-      <Route path="collegelist" element={<CollegeListPages/>}/>
+      <Route path="/collegelist" element={<CollegeListPages/>}/>
       <Route path="/collegeregistration" element={<CollegeRegistrationPage/>}/>
       <Route path="collegeselection" element={<CollegeSelectionPage/>}/>
       <Route path="/collegesignup" element={<CollegeSignUpPage/>}/>

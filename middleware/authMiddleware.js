@@ -32,7 +32,7 @@ export const isAdmin=async(req,res,next)=>{
     }
     catch(error){
         console.log(error)
-        res.staus(401),send({
+        res.status(401),send({
                success:false,
                error,
                messagage:"Error in Admin middleware"
