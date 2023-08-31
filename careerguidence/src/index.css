@@ -1,9 +1,18 @@
+/* footer */
+
+*{
+    margin: 0;
+    padding: 0;
+}
 .footer{
+    border-top: 5px solid grey;
+    position: fixed;
     background-color:lightblue;
     color:red;
     font-style:italic;
-    height:80px;
+    height:100%;
     padding: 5px;
+    width: 100%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 .footer h4{
@@ -20,7 +29,100 @@
     background-color:rgb(150, 150, 252);
     border-radius: 10px;
 }
+body{
+    background-color:antiquewhite;
+}
 
 .footer a:active{
     background-color:red;
+}
+
+/* header */
+
+.nav-container{
+    background-color:lightblue ;
+    border-bottom: 5px solid grey;
+    height: 45px;
+}
+.nav-container nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+}
+
+nav h4{
+    margin-left:8px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:blue;
+}
+nav h4 span{
+    color:red;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    align-items: center;
+    color:blue;
+}
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content:"";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav .fas{
+    display: none;
+}
+
+/* 
+small devices */
+@media only screen and (max-width:600px){
+    nav .fas{
+      display: block;
+      font-size: 25px;
+    }
+    nav ul{
+        background:lightcyan;
+        position:fixed;
+        top:0;
+        right:-600px;
+        width:600px;
+        height: 87.2%;
+        padding-top:50px;
+        z-index: 2;
+        }
+    nav ul li{
+        display:block;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+
+    }
+    nav ul .fas{
+        position: absolute;
+        top:25px;
+        left:50vw;
+        cursor:pointer;
+    }
 }
