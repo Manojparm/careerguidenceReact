@@ -3,10 +3,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .footer{
     border-top: 5px solid grey;
-    position: fixed;
     background-color:lightblue;
     color:red;
     font-style:italic;
@@ -42,14 +42,12 @@ body{
 .nav-container{
     background-color:lightblue ;
     border-bottom: 5px solid grey;
-    height: 45px;
+    height: 55px;
+    width: 100%;
 }
 .nav-container nav{
     display: flex;
-    align-items: center;
-    justify-content:space-between;
-    flex-wrap: wrap;
-
+    justify-content:space-between; 
 }
 
 nav h4{
@@ -57,19 +55,23 @@ nav h4{
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:blue;
+    margin-top: 15px;
 }
 nav h4 span{
     color:red;
+}
+nav h4 a{
+    text-decoration: none;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
     margin-left:20px;
     margin-right:20px;
-    margin-top: 5px;
+    margin-top: 15px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 900;
-    align-items: center;
+    
     color:blue;
 }
 nav ul li a{
@@ -100,7 +102,9 @@ small devices */
 @media only screen and (max-width:600px){
     nav .fas{
       display: block;
-      font-size: 25px;
+      font-size: 40px;
+      margin-top:5px;
+      
     }
     nav ul{
         background:lightcyan;
@@ -108,7 +112,7 @@ small devices */
         top:0;
         right:-600px;
         width:600px;
-        height: 87.2%;
+        height: 100vh;
         padding-top:50px;
         z-index: 2;
         }

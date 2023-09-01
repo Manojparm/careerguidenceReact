@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../Components/Layout'
 const ApptitudeTestPage = () => {
   return (
-   <Layout>
+   <Layout title={"Apptitude-test-careerguidence"}>
     <h1>ApptitudeTestPage</h1>
    </Layout>
   )

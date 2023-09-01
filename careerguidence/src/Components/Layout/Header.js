@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 const Header = () => {
    function openmenu(e){
     let sidemenu=document.getElementById("sidemenu");
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className='nav-container'>
     <nav>
-     <h4>Career-<span>Guidence</span></h4>
+     <h4><Link to="/">Career-<span>Guidence</span></Link></h4> 
      <ul id="sidemenu">
       <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="/signup">Signup</NavLink></li>
